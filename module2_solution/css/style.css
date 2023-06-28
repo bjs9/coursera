@@ -1,0 +1,89 @@
+/********** Basic **********/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+body {
+    background-color: #ededed;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 1.75em;
+}
+
+.blocks {
+    width: 100%;
+}
+
+.block {
+    float: left;
+    border: 3px solid black;
+    background-color: #777777;
+}
+
+.block-header {
+    width: min-content;
+    margin-left: auto;
+    text-align: center;
+    padding: 8px 15px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.block:nth-child(1) > .block-header {
+    background-color: red;
+    color: white;
+}
+
+.block:nth-child(2) > .block-header {
+    background-color: yellow;
+}
+
+.block:nth-child(3) > .block-header {
+    background-color: green;
+}
+
+.block-content {
+    padding: 15px;
+}
+
+
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+    .block {
+        width: 31%;
+        margin-left: 1.75%;
+    }
+}
+
+
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 992px) {
+    .block:nth-child(1), .block:nth-child(2) {
+        width: 46%;
+        margin: 0 2%;
+    }
+    .block:nth-child(3) {
+        width: 96%;
+        margin: 0 2%;
+        margin-top: 20px;
+    }
+}
+
+
+/********** Mobile **********/
+@media (max-width: 768px) {
+    .block {
+        width: 96%;
+        margin: 0 2%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
