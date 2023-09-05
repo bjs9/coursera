@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+
+    border: none;
+    background-color: rgb(175, 175, 175);
+    color: #000000;
+    font-family: cursive;
+}
+
+body {
+    background-color: #d8d8d8;
+    color: rgb(0, 0, 0);
+}
+
+.center {
+    width: 90%;
+    background-color: rgb(107, 107, 107);
+
+}
+
+.container {
+    background-color: rgb(114, 114, 114);
+}
+
+.text-center {
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#myNavbar ul li a {
+    color: #000000;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: black !important;
+}
